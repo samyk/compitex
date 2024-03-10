@@ -50,3 +50,14 @@ typedef struct nodeTypeTag {
 } nodeType;
 extern int sym[26];
 extern int lineno;
+
+/* prototypes */
+nodeType *opr(int oper, int nops, ...);
+nodeType *id(char* s);
+nodeType *con(double value);
+void freeNode(nodeType *p);
+int ex(nodeType *p);
+int yylex(void);
+int scan_init(FILE *out, FILE *in);
+int parse(FILE *out, FILE *in);
+void yyerror(char *s);
