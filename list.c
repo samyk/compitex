@@ -20,6 +20,7 @@
  *
  ***************************************************************************/
 #include <string.h>
+#include <stdlib.h>
 #include "list.h"
 
 static int (*eq) (void *d1, void *d2);
@@ -30,6 +31,8 @@ static int dummy_eq(void *d1, void *d2)
 		
 	if(d1 == d2)
 		return 1;
+
+	return -1;
 }
 
 void List_init(List *l, int (*compare) (void *d1, void *d2))

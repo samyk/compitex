@@ -19,6 +19,8 @@
  * KIND, either express or implied.
  *
  ***************************************************************************/
+#include <string.h>
+#include <stdlib.h>
 #include "parameter.h"
 
 int Parameter_eq(void *d1, void *d2) {

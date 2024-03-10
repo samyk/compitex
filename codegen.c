@@ -155,7 +155,7 @@ int parse_sum_node(sumNode * s, nodeType * p, int parse_exp)
     return 0;    
 }
 
-char* _sumpass(char *dst, nodeType *p, int topcall) {
+int _sumpass(char *dst, nodeType *p, int topcall) {
     static int sumid=0;
     sumNode *s;
     int ret;
@@ -219,6 +219,7 @@ char* _sumpass(char *dst, nodeType *p, int topcall) {
     }
     
     
+    return 0;
 }
 
 void _parampass(List *dst, nodeType *p)
