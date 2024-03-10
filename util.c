@@ -21,6 +21,7 @@
  ***************************************************************************/
 #include <string.h>
 #include <stdarg.h>
+#include <stdio.h>
 #include "util.h"
 
 #define TAB_INDENT "    "
